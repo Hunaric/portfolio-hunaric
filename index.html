@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunaric</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
@@ -14,10 +15,14 @@
         :root {
             --font-high: "Dancing Script";
             --font-primary: "Exo 2";
-            --font-secondary: "Playwrite Deutschland Grundschrift";
+            --font-secondary: "Playwrite DE Grund";
             --font-title: "Fredoka";
-            --font-style: "Edu Australia VIC WA NT Hand Guides";
+            --font-style: "Edu AU VIC WA NT Guides";
 
+            --color-one: #93441A;
+            --color-two: #B67332;
+            --color-thre: #DAAB3A;
+            --color-four: #EEE6D8;
         }
 
         body {
@@ -39,24 +44,85 @@
         .font-style {
             font-family: var(--font-style);
         }
+
+        .bg-one {background-color: var(--color-one);}
+        .bg-two {background-color: var(--color-two);}
+        .bg-three {background-color: var(--color-thre);}
+        .bg-four {background-color: var(--color-four);}
+
+        .text-one {color: var(--color-one);}
+        .text-two {color: var(--color-two);}
+        .text-three {color: var(--color-thre);}
+        .text-four {color: var(--color-four);}
         
     </style>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <div class="">Logo</div>
-                <div>
-                    <ul>
+    <main class="relative text-four bg-two">
+        <header class="relative top-0 w-full z-50 h-20 bg-one px-12">
+            <nav class="flex flex-row justify-between items-center gap-12 mx-52">
+                <div class="font-high font-bold text-[52px]">HUNARIC</div>
+                <div class="">
+                    <ul class="flex flex-row gap-6 font-title">
                         <li>Home</li>
                         <li>About</li>
+                        <li>Career</li>
                         <li>Skills</li>
                         <li>Show case</li>
                     </ul>
                 </div>
             </nav>
         </header>
+        <section class="h-[75vh] bg-three top-0">
+            <div>
+                <div>Image</div>
+                <div>
+                    <div>Header title</div>
+                    <div>Content</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>About</div>
+                <div>
+                    <div>Description</div>
+                    <div>Quality</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>Career</div>
+                <div>
+                    <ul>
+                        <li>
+                            <div>20XX</div>
+                            <div>v</div>
+                            <div>Description</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>Skills</div>
+                <div>
+                    <div>Skill logo</div>
+                    <div>Description</div>
+                    <div>Rate</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>Show Case</div>
+                <div>
+                    <div>Here a card</div>
+                </div>
+            </div>
+        </section>
         <footer></footer>
     </main>
 </body>
